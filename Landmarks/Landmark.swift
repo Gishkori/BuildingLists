@@ -7,19 +7,10 @@
 
 import Foundation
 
-
-
-
-{
-    "name": "Turtle Rock",
-    "category": "Rivers",
-    "city": "Twentynine Palms",
-    "state": "California",
-    "id": 1001,
-    "isFeatured": true,
-    "isFavorite": true,
-    "park": "Joshua Tree National Park",
-    "coordinates": {
-        "longitude": -116.166868,
-        "latitude": 34.011286
-    },
+struct Landmark: Hashable, Codable {
+    var id: Int
+    var name: String
+    var park: String
+    var state: String
+    var description: String
+}
